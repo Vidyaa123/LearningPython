@@ -109,6 +109,17 @@ import math
 # =============================================================================
 # Table of contents. Write a table of contents program here. Start the program with a list holding all of the information for your table of contents (chapter names, page numbers, and so on). Then print out the information from the list in a beautifully formatted table of contents. Use string formatting such as left align, right align, cente 
 # =============================================================================
+chapter = ['Chapter 1', 'Chapter 2', 'Chapter 3', 'Chapter 4', 'Chapter 5']
+title = ['Getting Started', 'Basic Python', 'Advanced Python', 'NLTK', 'Data Analaysis']
+page = ['page 1', 'page 10', ' page 50', 'page 120','page 210']
+
+for i  in range(0,len(chapter)):
+	print(chapter[i].ljust(15),end="")
+	print(title[i].center(30),end="")
+	print(page[i].rjust(10))
+	print()
+
+
 # =============================================================================
 # Write a function that prints out "moo" n times.
 # =============================================================================
